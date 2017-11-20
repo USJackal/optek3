@@ -488,6 +488,11 @@ ul li {
 	-webkit-transform: translate3d(0, 200%, 0);
 	transform: translate3d(0, 200%, 0);
 }
+
+.info-content img{
+	top:100%;
+	right: 100%;
+}
 .info-content:hover img {
 	-moz-transform: scale(1.2);
 	-ms-transform: scale(1.2);
