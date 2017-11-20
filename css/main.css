@@ -293,6 +293,40 @@ ul li {
 	Banner
 -------------------------------------------------------------------------------*/
 
+
+.savanna-banner{
+	background-image: url(../images/savanna-background.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 750px;
+
+}
+
+.jungle-banner{
+	background-image: url(../images/jungle_background.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 750px;
+}
+
+.arctic-banner{
+	background-image: url(../images/arctic_background.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 750px;
+}
 .banner {
 	background-image: url(../images/banner.jpg);
 	background-position: center top;
@@ -321,17 +355,51 @@ ul li {
 	margin-top: 30px;
 	margin-bottom: 80px;
 }
+.banner-content{
+	margin-top: 30px;
+	margin-bottom: 80px;
+	padding-top: 22%;
+
+}
 /* ==========================================================================
 	$intro
 ========================================================================== */
-.intro {
+
+.savanna-intro{
+	background-color: #d58512;
+}
+
+.savanna-intro h3{
+	color: #fff;
+}
+
+.savanna-intro p{
+	font-family: "Merriweather", Arial, sans-serif;
+	color: rgba(255, 255, 255, 0.75);
+	font-weight: 400;
+}
+.jungle-intro{
+	background-color: #398439;
+}
+
+.jungle-intro h3 {
+	color: #fff
+}
+
+.jungle-intro p {
+	font-family: "Merriweather", Arial, sans-serif;
+	color: rgba(255, 255, 255, 0.75);
+	font-weight: 400;
+}
+
+.arctic-intro {
 	background-color: #00aeda;
 }
-.intro h3 {
+.arctic-intro h3 {
 	color: #fff;
 	margin-top: 0;
 }
-.intro p {
+.arctic-intro p {
 	font-family: "Merriweather", Arial, sans-serif;
 	color: rgba(255, 255, 255, 0.75);
 	font-weight: 400;
@@ -368,6 +436,7 @@ ul li {
 	width: 500px;
 	height: 275px;
 }
+
 .work .overlay {
 	background: rgba(0, 174, 218, 0.9);
 	height: 100%;
@@ -381,6 +450,7 @@ ul li {
 	-webkit-transition: opacity, 0.3s;
 	transition: opacity, 0.3s;
 }
+
 .work .overlay-caption {
 	position: absolute;
 	text-align: center;
@@ -418,16 +488,16 @@ ul li {
 	-webkit-transform: translate3d(0, 200%, 0);
 	transform: translate3d(0, 200%, 0);
 }
-.bio-content:hover img {
+.info-content:hover img {
 	-moz-transform: scale(1.2);
 	-ms-transform: scale(1.2);
 	-webkit-transform: scale(1.2);
 	transform: scale(1.2);
 }
-.bio-content:hover .overlay {
+.info-content:hover .overlay {
 	opacity: 1;
 }
-.bio-content:hover .overlay h5, .bio-content:hover .overlay p {
+.info-content:hover .overlay h5, .info-content:hover .overlay p {
 	opacity: 1;
 	-moz-transform: translate3d(0, 0, 0);
 	-ms-transform: translate3d(0, 0, 0);
