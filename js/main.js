@@ -54,3 +54,6 @@ $(document).ready(function() {
 		nav.toggleClass('open');
 	});
 });
+
+//hide and unhide 360 panorama
+

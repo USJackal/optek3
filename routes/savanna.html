@@ -17,8 +17,8 @@
 
     <style>
         #panoSavanna {
-            width: 600px;
-            height: 400px;
+            width: 800px;
+            height: 600px;
         }
     </style>
 
@@ -51,13 +51,15 @@
     <div class="container">
         <div class="col-md-8 col-md-offset-2">
             <div class="banner-content content-center">
-                <div id="panoSavanna"></div>
+                <div id="panoSavanna" hidden="hidden"></div>
             </div>
         </div>
     </div>
 </section>
+<input type="button" id="hidePano" value="Click Here">
 <!-- Header SLUT -->
 <!-- INTRO -->
+
 <section id="intro" class="section savanna-intro">
     <div class="container">
         <div class="col-md-8 col-md-offset-2 text-center">
@@ -138,12 +140,17 @@
 
 <!-- panorama setup -->
 <script>
-    pannellum.viewer('panoSavanna', {
-        "type": "equirectangular",
-        "panorama": "../images/Panorama_background.jpg",
-        "autoLoad": true,
-        "autoRotate": -2
+
+    $('#hidePano').click(function(){
+        $('#panoSavanna').show('fast');
+        pannellum.viewer('panoSavanna', {
+            "type": "equirectangular",
+            "panorama": "../images/360/Savanna.jpg",
+            "autoLoad": true,
+            "autoRotate": -2
+        });
     });
+
 </script>
 
 </body>
