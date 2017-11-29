@@ -10,6 +10,18 @@
 
     <title>Den Arktiske Cirkel</title>
 
+    <!-- Artic panorama -->
+    <script type="text/javascript" src="https://cdn.pannellum.org/2.3/pannellum.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.pannellum.org/2.3/pannellum.css"/>
+
+    <style>
+        #panoArtic {
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -26,11 +38,11 @@
         <div class="header-content clearfix"> <a class="logo" href="../index.html" target="_blank">Gruppe 2</a>
             <nav class="navigation" role="navigation">
                 <ul class="primary-nav">
-                    <li><a href="../routes/readmeQR.html" target="_blank">QR</a></li>
-                    <li><a href="../routes/savanna.html" target="_blank">SAVANNE</a></li>
-                    <li><a href="../routes/jungle.html" target="_blank">JUNGLE</a></li>
-                    <li><a href="../routes/arctic.html" target="_blank">ARTISK CIRKEL</a></li>
-                    <li><a href="../routes/contact.html" target="_blank">KONTAKT</a></li>
+                    <li><a href="readmeQR.html" target="_blank">QR</a></li>
+                    <li><a href="savanna.html" target="_blank">SAVANNE</a></li>
+                    <li><a href="jungle.html" target="_blank">JUNGLE</a></li>
+                    <li><a href="arctic.html" target="_blank">ARTISK CIRKEL</a></li>
+                    <li><a href="contact.html" target="_blank">KONTAKT</a></li>
                 </ul>
             </nav>
             <a href="#" class="nav-toggle">Menu<span></span></a> </div>
@@ -39,7 +51,7 @@
     <div class="container">
         <div class="col-md-8 col-md-offset-2">
             <div class="banner-content content-center">
-                <img src="../images/360-placeholder.jpg">
+                <div id="panoArtic"></div>
                </div>
         </div>
     </div>
@@ -124,4 +136,14 @@
     <!-- footer top -->
 
 </footer>
+
+<!-- panorama setup -->
+<script>
+    pannellum.viewer('panoArtic', {
+        "type": "equirectangular",
+        "panorama": "../images/Panorama_background.jpg",
+        "autoLoad": true,
+        "autoRotate": -2
+    });
+</script>
 </body>
