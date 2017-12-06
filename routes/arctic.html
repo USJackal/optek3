@@ -56,6 +56,8 @@
         </div>
     </div>
 </section>
+
+<input type="button" id="hidePano" value="Click Here">
 <!-- Header SLUT -->
 <!-- INTRO -->
 <section id="intro" class="section arctic-intro">
@@ -139,11 +141,13 @@
 
 <!-- panorama setup -->
 <script>
-    pannellum.viewer('panoArtic', {
-        "type": "equirectangular",
-        "panorama": "../images/Panorama_background.jpg",
-        "autoLoad": true,
-        "autoRotate": -2
+    $('#hidePano').click(function(){
+        $('#panoArtic').show('fast');
+        pannellum.viewer('panoArtic', {
+            "type": "equirectangular",
+            "panorama": "../images/Panorama_background.jpg",
+            "autoRotate": -2
+        });
     });
 </script>
 </body>

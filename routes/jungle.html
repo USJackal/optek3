@@ -51,11 +51,13 @@
     <div class="container">
         <div class="col-md-8 col-md-offset-2">
             <div class="banner-content content-center">
-                <div id="panoJungle"></div>
+                <div id="panoJungle" hidden="hidden"></div>
             </div>
         </div>
     </div>
 </section>
+
+<input type="button" id="hidePano" value="Click Here">
 <!-- Header SLUT -->
 <!-- INTRO -->
 <section id="intro" class="section jungle-intro">
@@ -138,11 +140,14 @@
 
 <!-- panorama setup -->
 <script>
-    pannellum.viewer('panoJungle', {
-        "type": "equirectangular",
-        "panorama": "../images/Panorama_background.jpg",
-        "autoLoad": true,
-        "autoRotate": -2
+
+    $('#hidePano').click(function(){
+        $('#panoJungle').show('fast');
+        pannellum.viewer('panoJungle', {
+            "type": "equirectangular",
+            "panorama": "../images/Panorama_background.jpg",
+            "autoRotate": -2
+        });
     });
 </script>
 
