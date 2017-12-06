@@ -145,8 +145,27 @@
         $('#panoArtic').show('fast');
         pannellum.viewer('panoArtic', {
             "type": "equirectangular",
-            "panorama": "../images/Panorama_background.jpg",
-            "autoRotate": -2
+            "panorama": "../images/360/Arctic.jpg",
+            "autoLoad": true,
+            "autoRotate": -2,
+            // hotSpotDebug, prints the cordinates of where you click in the console.
+//            "hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -9.9,
+                    "yaw": 49.6,
+                    "type": "info",
+                    "text": "Arktis klima er præget af kolde vintre og kolde somre. Dens nedbør kommer hovedsagelig i form af sne",
+                    // inset URL for links til andre sider her hvis det skal bruges
+                    "URL": "https://google.com/"
+                },
+                {
+                    "pitch": -4.9,
+                    "yaw": -144.4,
+                    "type": "info",
+                    "text": "Planteædere på tundraen omfatter den arktiske hare, lemming, muskox og caribou. De bliver jaget af rovdyr så som sneen ugle, arktiske ræv, Grizzly bjørn og ulv. Isbjørn er også en rovdyr, selv om det foretrækker at jage for det marine liv fra isen."
+                }
+            ]
         });
     });
 </script>

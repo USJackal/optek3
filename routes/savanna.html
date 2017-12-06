@@ -51,7 +51,7 @@
     <div class="container">
         <div class="col-md-8 col-md-offset-2">
             <div class="banner-content content-center">
-                <div id="panoSavanna" hidden="hidden"></div>
+                <div id="panoSavanna"></div>
             </div>
         </div>
     </div>
@@ -145,7 +145,8 @@
         $('#panoSavanna').show('fast');
         pannellum.viewer('panoSavanna', {
             "type": "equirectangular",
-            "panorama": "../images/360/Savanna.jpg",
+            "panorama": "../images/360/Savanna2.jpg",
+            "autoLoad": true,
             "autoRotate": -2
         });
     });
