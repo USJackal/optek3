@@ -49,14 +49,16 @@
     </header>
     <!-- Baggrund og banner -->
     <div class="container">
+
         <div class="col-md-8 col-md-offset-2">
             <div class="banner-content content-center">
+                <input type="button" id="hidePano" value="Click Here">
                 <div id="panoSavanna"></div>
             </div>
         </div>
     </div>
 </section>
-<input type="button" id="hidePano" value="Click Here">
+
 <!-- Header SLUT -->
 <!-- INTRO -->
 
@@ -142,12 +144,29 @@
 <script>
 
     $('#hidePano').click(function(){
+        $('#hidePano').hide();
         $('#panoSavanna').show('fast');
         pannellum.viewer('panoSavanna', {
             "type": "equirectangular",
             "panorama": "../images/360/Savanna2.jpg",
             "autoLoad": true,
-            "autoRotate": -2
+            "autoRotate": -2,
+            // hotSpotDebug, prints the cordinates of where you click in the console.
+            "hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": -12.9,
+                    "yaw": 49.6,
+                    "type": "info",
+                    "text": "Menneskeskabte klimaændringer som følge af drivhuseffekten kan resultere i en ændring af savannas struktur og funktion"
+                },
+                {
+                    "pitch": -2.9,
+                    "yaw": -25.4,
+                    "type": "info",
+                    "text": "Mange græsklædte landskaber og blandede samfund af træer, buske og græs blev beskrevet som savanne før midten af ​​1800-tallet, da konceptet om et tropisk savanneklima blev oprettet."
+                }
+            ]
         });
     });
 

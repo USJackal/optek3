@@ -49,15 +49,17 @@
     </header>
     <!-- Baggrund og banner -->
     <div class="container">
+
         <div class="col-md-8 col-md-offset-2">
             <div class="banner-content content-center">
+                <input type="button" id="hidePano" value="Click Here">
                 <div id="panoJungle"></div>
             </div>
         </div>
     </div>
 </section>
 
-<input type="button" id="hidePano" value="Click Here">
+
 <!-- Header SLUT -->
 <!-- INTRO -->
 <section id="intro" class="section jungle-intro">
@@ -142,12 +144,38 @@
 <script>
 
     $('#hidePano').click(function(){
+        $('#hidePano').hide();
         $('#panoJungle').show('fast');
         pannellum.viewer('panoJungle', {
             "type": "equirectangular",
             "panorama": "../images/360/Jungle.jpg",
             "autoLoad": true,
-            "autoRotate": -2
+            "autoRotate": -2,
+            // hotSpotDebug, prints the cordinates of where you click in the console.
+            "hotSpotDebug": true,
+            "hotSpots": [
+                {
+                    "pitch": 3.9,
+                    "yaw": 28.6,
+                    "type": "info",
+                    "text": "En regnskov er en skov, der har sit tilnavn fra den daglige regn. Regnskove opstår overalt, hvor nedbørsmængden overstiger fordampningstabet måned for måned.",
+                    // inset URL for links til andre sider her hvis det skal bruges
+                    "URL": "https://http://regnskove.dk/regnskove/hvad-er-en-regnskov/"
+                },
+                {
+                    "pitch": 2.9,
+                    "yaw": 88.4,
+                    "type": "info",
+                    "text": "Den tropiske regnskov er 60 millioner år gammel og dermed verdens ældste skov. Den ligger som et grønt bælte omkring ækvator. I regnskoven lever over halvdelen af alle verdens plante- og dyrearter, til trods for at den kun dækker mindre end én tiendedel af landjorden."
+                },
+                {
+                    "pitch": -17.9,
+                    "yaw": 60.4,
+                    "type": "info",
+                    "text": "Tigeren er en af de få katte, som bruger vand til andet end at drikke.",
+                    "image": "../images/Animals/Tiger3.jpg"
+                }
+            ]
         });
     });
 </script>

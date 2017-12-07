@@ -51,13 +51,14 @@
     <div class="container">
         <div class="col-md-8 col-md-offset-2">
             <div class="banner-content content-center">
+                <input type="button" id="hidePano" value="Click Here">
                 <div id="panoArtic"></div>
                </div>
         </div>
     </div>
 </section>
 
-<input type="button" id="hidePano" value="Click Here">
+
 <!-- Header SLUT -->
 <!-- INTRO -->
 <section id="intro" class="section arctic-intro">
@@ -142,6 +143,7 @@
 <!-- panorama setup -->
 <script>
     $('#hidePano').click(function(){
+        $('#hidePano').hide();
         $('#panoArtic').show('fast');
         pannellum.viewer('panoArtic', {
             "type": "equirectangular",
