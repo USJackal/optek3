@@ -1,0 +1,7 @@
+{
+  "name": "Node.js Deploy",
+  "description": "optek3",
+  "repository": "https://github.com/USJackal/optek3",
+  "logo": "",
+  "keywords": ["node", "express", "static"]
+}
