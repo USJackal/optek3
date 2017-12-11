@@ -18,7 +18,7 @@
     <style>
         #panoSavanna {
             width: 800px;
-            height: 600px;
+            height: 500px;
         }
     </style>
 
@@ -52,7 +52,7 @@
 
         <div class="col-md-8 col-md-offset-2">
             <div class="banner-content content-center">
-                <input type="button" id="hidePano" value="Click Here">
+                <input type="button" id="hidePanoS" value="Klik på mig!" class="col-lg-4 col-md-4 col-sm-4">
                 <div id="panoSavanna"></div>
             </div>
         </div>
@@ -143,8 +143,8 @@
 <!-- panorama setup -->
 <script>
 
-    $('#hidePano').click(function(){
-        $('#hidePano').hide();
+    $('#hidePanoS').click(function(){
+        $('#hidePanoS').hide();
         $('#panoSavanna').show('fast');
         pannellum.viewer('panoSavanna', {
             "type": "equirectangular",

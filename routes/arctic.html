@@ -17,8 +17,8 @@
 
     <style>
         #panoArtic {
-            width: 600px;
-            height: 400px;
+            width: 800px;
+            height: 500px;
         }
     </style>
 
@@ -51,7 +51,7 @@
     <div class="container">
         <div class="col-md-8 col-md-offset-2">
             <div class="banner-content content-center">
-                <input type="button" id="hidePano" value="Click Here">
+                <input type="button" id="hidePanoA" value="Klik på mig!" class="col-lg-4 col-md-4 col-sm-4">
                 <div id="panoArtic"></div>
                </div>
         </div>
@@ -142,8 +142,8 @@
 
 <!-- panorama setup -->
 <script>
-    $('#hidePano').click(function(){
-        $('#hidePano').hide();
+    $('#hidePanoA').click(function(){
+        $('#hidePanoA').hide();
         $('#panoArtic').show('fast');
         pannellum.viewer('panoArtic', {
             "type": "equirectangular",

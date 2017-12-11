@@ -17,8 +17,8 @@
 
     <style>
         #panoJungle {
-            width: 600px;
-            height: 400px;
+            width: 800px;
+            height: 500px;
         }
     </style>
 
@@ -52,7 +52,7 @@
 
         <div class="col-md-8 col-md-offset-2">
             <div class="banner-content content-center">
-                <input type="button" id="hidePano" value="Click Here">
+                <input type="button" id="hidePanoJ" value="Klik på mig!" class="col-lg-4 col-md-4 col-sm-4">
                 <div id="panoJungle"></div>
             </div>
         </div>
@@ -143,8 +143,8 @@
 <!-- panorama setup -->
 <script>
 
-    $('#hidePano').click(function(){
-        $('#hidePano').hide();
+    $('#hidePanoJ').click(function(){
+        $('#hidePanoJ').hide();
         $('#panoJungle').show('fast');
         pannellum.viewer('panoJungle', {
             "type": "equirectangular",
