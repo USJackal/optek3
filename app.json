@@ -1,7 +1,8 @@
 {
-  "name": "Hello Node",
-  "description": "Hello Node",
+  "name": "Gruppe 2 Optek 3 projekt",
+  "description": "Optek 3 semester projekt",
   "repository": "https://github.com/USJackal/optek3",
-  "website": "http://www.jamesward.com",
-  "keywords": ["node"]
+  "website": "",
+  "keywords": ["optek3"]
+  "language": "english"
 }
