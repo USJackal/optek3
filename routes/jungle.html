@@ -14,6 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.pannellum.org/2.3/pannellum.css"/>
 
+    <!-- Jungle panorama video -->
+    <link href="https://vjs.zencdn.net/5.4.6/video-js.css" rel="stylesheet"
+          type="text/css">
+    <script src="https://vjs.zencdn.net/5.4.6/video.js"></script>
+    <script src="../js/videojs-pannellum-plugin.js"></script>
+
     <style>
         #panoJungle {
             width: 800px;
@@ -113,7 +119,11 @@
 <div class="jungle-banner" role="banner">
     <div class="col-md-8 col-md-offset-2">
         <div class="banner-content content-center" role="banner">
-            <img src="../images/360-placeholder.jpg" style="margin-top:-15%;">
+            <video id="panorama" class="video-js vjs-default-skin vjs-big-play-centered"
+                   controls preload="none" style="width:100%;height:400px;" crossorigin="anonymous">
+                <source src="../images/video/360%20Video%20African%20Safari%20Experience.mp4" type="video/webm"/>
+                <source src="../images/video/360%20Video%20African%20Safari%20Experience.mp4" type="video/mp4"/>
+            </video>
         </div>
     </div>
 </div>
@@ -182,6 +192,11 @@
                 }
             ]
         });
+    });
+    videojs('panorama', {
+        plugins: {
+            pannellum: {}
+        }
     });
 </script>
 
